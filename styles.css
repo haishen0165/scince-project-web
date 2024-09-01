@@ -19,7 +19,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 180px; /* 调整侧边栏宽度 */
     height: 100%;
     background-color: #f8f9fa;
     overflow-y: auto;
@@ -51,7 +51,7 @@ header {
 }
 
 .content {
-    margin-left: 270px;
+    margin-left: calc(180px + 1cm); /* 设置内容区域左边距，计算侧边栏宽度加1cm */
     padding: 20px;
     flex: 1;
 }
@@ -70,9 +70,9 @@ header {
 
 @media (max-width: 768px) {
     .sidebar {
-        width: 200px;
+        width: 150px; /* 缩小屏幕时调整侧边栏宽度 */
     }
     .content {
-        margin-left: 220px;
+        margin-left: calc(150px + 1cm); /* 缩小屏幕时调整内容区域左边距 */
     }
 }
