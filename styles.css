@@ -2,21 +2,30 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    height: 100vh;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
 .container {
     display: flex;
-    width: 100%;
 }
 
 .sidebar {
-    background-color: #f8f9fa;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 250px;
-    padding: 20px;
+    height: 100%;
+    background-color: #f8f9fa;
     overflow-y: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #ddd;
 }
 
 .sidebar nav ul {
@@ -42,13 +51,17 @@ body {
 }
 
 .content {
+    margin-left: 270px;
     padding: 20px;
     flex: 1;
-    overflow-y: auto;
 }
 
-.content h1, .content h2, .content h3 {
+.content h2 {
     margin-top: 20px;
+}
+
+.content h3, .content h4 {
+    margin-top: 15px;
 }
 
 .content p {
@@ -58,5 +71,8 @@ body {
 @media (max-width: 768px) {
     .sidebar {
         width: 200px;
+    }
+    .content {
+        margin-left: 220px;
     }
 }
