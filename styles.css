@@ -69,3 +69,12 @@ img {
     height: auto;
     margin: 20px 0;
 }
+
+/* 新增样式规则 */
+img.fixed-width {
+    width: 100%;
+    max-width: 700px; /* 设置固定最大宽度 */
+    height: auto; /* 高度自动调整以保持比例 */
+    display: block; /* 去掉底部的空白 */
+    margin: 20px 0; /* 顶部和底部的外边距 */
+}
